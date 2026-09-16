@@ -1,0 +1,24 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Java / Maven
+target/
+*.class
+
+# JVM crash logs
+hs_err_pid*.log
+replay_pid*.log
+
+# Environment and secrets
+.env
+.env.*
+application-local.yml
+application-local.yaml
+application-secrets.yml
+application-secrets.yaml
+
+# OS files
+.DS_Store
+Thumbs.db
+k8s/k8s-secrets.env

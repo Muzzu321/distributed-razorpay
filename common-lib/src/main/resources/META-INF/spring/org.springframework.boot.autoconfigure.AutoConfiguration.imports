@@ -1,0 +1,6 @@
+com.muzammil.razorpay.common_lib.util.SharedSecurityAutoConfiguration
+com.muzammil.razorpay.common_lib.config.SharedKafkaAutoConfiguration
+com.muzammil.razorpay.common_lib.web.SharedWebFilterAutoConfiguration
+com.muzammil.razorpay.common_lib.idempotency.SharedResilienceAutoConfiguration
+com.muzammil.razorpay.common_lib.audit.SharedAuditAutoConfiguration
+com.muzammil.razorpay.common_lib.exception.SharedExceptionAutoConfiguration
