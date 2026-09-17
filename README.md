@@ -69,21 +69,21 @@ webhook delivery, and settlement.
 ### Payment Flow Overview
 <img width="1200" height="814" alt="Payment Flow Diagrams" src="https://github.com/user-attachments/assets/cc0c8ac1-9bb5-404e-9c19-1aa1c01500cf" />
 
-
-
-
-
-
 ## Design Patterns
 
-- **Idempotency** — prevents duplicate orders and payments during retries
-- **Transactional Outbox** — reliable database-to-Kafka event publishing
-- **SAGA** — handles distributed payment workflows
-- **Circuit Breaker** — prevents cascading failures
-- **Distributed Locking** — prevents duplicate scheduled-job execution
-- **Stateless Services** — enables horizontal scaling
+The system uses several patterns to address reliability, extensibility, and
+distributed transaction challenges.
 
-## Load Testing
+| Pattern | Purpose |
+|---|---|
+| Strategy Pattern | Supports multiple payment methods through a pluggable adapter layer |
+| Transactional Outbox | Reliably publishes domain events after database transactions |
+| Saga Pattern | Coordinates multi-step payment workflows across services |
+| Idempotency | Prevents duplicate payment operations during request retries |
+| Circuit Breaker | Limits cascading failures when downstream services are unavailable |
+| Retry | Handles transient failures between distributed components |
+| Distributed Lock | Prevents concurrent execution of scheduled operations |
+| API Gateway | Provides a single entry point for routing, authentication, and rate limiting |
 
 Load tested using Apache JMeter.
 
