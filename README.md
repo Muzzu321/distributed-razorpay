@@ -162,4 +162,19 @@ The deployment includes the core business services together with the
 supporting infrastructure required by the platform.
 ## Tech Stack
 
-**Java | Spring Boot | Spring Cloud | PostgreSQL | Redis | Kafka | Kubernetes | Docker | Resilience4J | Prometheus | Grafana | Zipkin | JMeter**
+| Category | Technologies |
+|---|---|
+| Language | Java |
+| Framework | Spring Boot, Spring Cloud |
+| API | REST, Spring WebFlux |
+| Messaging | Apache Kafka |
+| Caching | Redis |
+| Database | PostgreSQL |
+| Security | Spring Security, JWT |
+| Resilience | Resilience4J |
+| Containers | Docker |
+| Orchestration | Kubernetes |
+| Service Communication | REST, OpenFeign |
+| Observability | Prometheus, Grafana, Zipkin |
+| Build | Maven |
+| Testing & Load Testing | JUnit, Apache JMeter |
