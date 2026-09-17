@@ -141,7 +141,7 @@ service behavior across the microservice architecture.
 
 The dashboard tracks CPU usage and JVM memory consumption across the
 microservices over time.
-<img width="900" height="561" alt="Grafana Dashboard" src="https://github.com/user-attachments/assets/bc9850ff-1e6b-4925-aaa7-8e3f4624a35d" />
+<img width="1200" height="748" alt="Grafana Dashboard" src="https://github.com/user-attachments/assets/bc9850ff-1e6b-4925-aaa7-8e3f4624a35d" />
 
 
 ## Kubernetes
