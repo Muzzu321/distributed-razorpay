@@ -144,10 +144,22 @@ microservices over time.
 <img width="1200" height="748" alt="Grafana Dashboard" src="https://github.com/user-attachments/assets/bc9850ff-1e6b-4925-aaa7-8e3f4624a35d" />
 
 
-## Kubernetes
+## Kubernetes Deployment
 
-Deployed using Kubernetes Deployments, StatefulSets, Services, ConfigMaps, and Secrets, with support for horizontal scaling.
+The services are containerized with Docker and deployed as independent
+workloads within Kubernetes.
 
+Kubernetes is used for:
+
+- Service deployment and lifecycle management
+- Horizontal scaling of microservices
+- Internal service communication
+- Configuration and service discovery
+- Isolating service workloads
+- Managing application availability across replicas
+
+The deployment includes the core business services together with the
+supporting infrastructure required by the platform.
 ## Tech Stack
 
 **Java | Spring Boot | Spring Cloud | PostgreSQL | Redis | Kafka | Kubernetes | Docker | Resilience4J | Prometheus | Grafana | Zipkin | JMeter**
