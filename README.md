@@ -1,22 +1,39 @@
 # Distributed Payment Gateway
 
-A Kubernetes-based distributed payment gateway inspired by Razorpay/Stripe, supporting order creation, payment authorization, bank callback simulation, settlement, and webhook delivery.
+A Kubernetes-native distributed payment platform built with Java and Spring Boot.
 
-## Features
+The system implements payment processing, order management, merchant operations,
+webhook delivery, settlement workflows, and multiple payment methods using a
+microservice architecture.
+
+## Engineering Focus
+
+This project explores reliability and scalability problems commonly found in
+distributed payment systems:
+
+- Idempotent payment and order requests
+- Reliable database-to-Kafka event publishing
+- Distributed payment workflows
+- Fault tolerance and downstream failure handling
+- Webhook retries and dead-letter processing
+- Distributed job locking
+- Horizontal scaling with Kubernetes
+- Metrics, dashboards, and distributed tracing
+
+## Key Features
 
 - Order creation and payment processing
 - Card, UPI, Net Banking, and Wallet support
-- Idempotency using Redis
+- Redis-based idempotency
 - Transactional Outbox with Kafka
-- Distributed locking using ShedLock
+- SAGA-based distributed workflows
 - Resilience4J Circuit Breaker and Retry
 - Secure card tokenization and encryption
 - Webhook delivery with retry and DLQ
 - Merchant settlement processing
-- Rate limiting using Redis
-- Kubernetes-based deployment and scaling
+- Redis-based rate limiting
+- Kubernetes deployment and scaling
 - Prometheus, Grafana, and Zipkin observability
-
 ## Architecture
 
 The platform consists of 7 microservices:
