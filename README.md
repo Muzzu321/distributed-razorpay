@@ -36,25 +36,23 @@ distributed payment systems:
 - Prometheus, Grafana, and Zipkin observability
 ## Architecture
 
-The platform consists of 7 microservices:
+The platform uses a microservice architecture deployed within a private
+Kubernetes network.
 
-- API Gateway
-- Payment Service
-- Merchant Service
-- Operations Service
-- Vault Service
-- Config Service
-- Discovery Service
+Client requests enter through the API Gateway, which handles authentication,
+rate limiting, and routing to the business services.
 
-Infrastructure:
+The Payment Service manages order, payment, and refund workflows.
+The Merchant Service handles merchant authorization, keys, and KYC.
+The Operations Service manages webhooks, settlement, and analytics.
+The Vault Service provides isolated payment credential tokenization.
 
-- PostgreSQL
-- Redis
-- Apache Kafka
-- Kubernetes
-- Prometheus
-- Grafana
-- Zipkin
+PostgreSQL provides service-specific persistence, Redis handles caching,
+counters and idempotency-related operations, while Kafka provides asynchronous
+event communication through the transactional outbox flow.
+
+Prometheus, Grafana, and Zipkin provide metrics, dashboards, and distributed
+tracing.
 
 <img width="900" alt="Distributed Payment Gateway Architecture" src="https://github.com/user-attachments/assets/4faabe78-a19f-43ee-a52e-9d71df805288" />
 
