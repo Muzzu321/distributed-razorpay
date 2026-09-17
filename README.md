@@ -5,6 +5,18 @@ A Kubernetes-native distributed payment platform built with Java and Spring Boot
 The system implements payment processing, order management, merchant operations,
 webhook delivery, settlement workflows, and multiple payment methods using a
 microservice architecture.
+## Quick Navigation
+
+- [Engineering Focus](#engineering-focus)
+- [Key Features](#key-features)
+- [Architecture](#architecture)
+- [Services](#services)
+- [Payment Flows](#payment-flows)
+- [Design Patterns](#design-patterns)
+- [Load Testing](#load-testing)
+- [Observability](#observability)
+- [Kubernetes Deployment](#kubernetes-deployment)
+- [Tech Stack](#tech-stack)
 
 ## Engineering Focus
 
