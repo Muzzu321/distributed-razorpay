@@ -137,9 +137,10 @@ service behavior across the microservice architecture.
 - **Grafana** — visualizes metrics through dashboards
 - **Zipkin** — provides distributed request tracing across services
 
-This helps identify latency, service failures, and request flow across
-distributed components.
+### Grafana Dashboard
 
+The dashboard tracks CPU usage and JVM memory consumption across the
+microservices over time.
 <img width="900" height="561" alt="Grafana Dashboard" src="https://github.com/user-attachments/assets/bc9850ff-1e6b-4925-aaa7-8e3f4624a35d" />
 
 
