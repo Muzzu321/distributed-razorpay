@@ -85,7 +85,12 @@ distributed transaction challenges.
 | Distributed Lock | Prevents concurrent execution of scheduled operations |
 | API Gateway | Provides a single entry point for routing, authentication, and rate limiting |
 
-Load tested using Apache JMeter.
+## Load Testing
+
+Load testing was performed using Apache JMeter against the deployed payment
+APIs.
+
+### Overall Results
 
 | Metric | Result |
 |---|---:|
@@ -96,23 +101,31 @@ Load tested using Apache JMeter.
 | P90 Latency | 983 ms |
 | P95 Latency | 1,499.95 ms |
 | P99 Latency | 2,210.99 ms |
-| Throughput | 308.58 transactions/sec |
+| Throughput | 308.58 TPS |
 
 ### Create Order
 
-- 20,000 requests
-- 0% errors
-- Average: 426.78 ms
-- P99: 2,230.99 ms
-- Throughput: 177.30 TPS
+| Metric | Result |
+|---|---:|
+| Requests | 20,000 |
+| Error Rate | 0.00% |
+| Average Response Time | 426.78 ms |
+| P99 Latency | 2,230.99 ms |
+| Throughput | 177.30 TPS |
 
 ### Init Payment
 
-- 20,000 requests
-- 0% errors
-- Average: 426.14 ms
-- P99: 2,257.99 ms
-- Throughput: 177.85 TPS
+| Metric | Result |
+|---|---:|
+| Requests | 20,000 |
+| Error Rate | 0.00% |
+| Average Response Time | 426.14 ms |
+| P99 Latency | 2,257.99 ms |
+| Throughput | 177.85 TPS |
+
+> **Note:** These results represent the recorded JMeter benchmark for this
+> test configuration. Throughput and latency depend on the deployment,
+> infrastructure, workload, and test configuration.
 
 <img width="900" height="451" alt="JMeter Load Test Results" src="https://github.com/user-attachments/assets/8e1f5d6c-65ca-40d5-8dba-5cb35acba7bf" />
 
