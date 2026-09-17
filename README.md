@@ -56,6 +56,24 @@ tracing.
 
 <img width="900" alt="Distributed Payment Gateway Architecture" src="https://github.com/user-attachments/assets/4faabe78-a19f-43ee-a52e-9d71df805288" />
 
+## Payment Flows
+
+The payment lifecycle is implemented as a sequence of interactions between
+the merchant, gateway, payment processor, payment-method adapter, and
+downstream banking systems.
+
+The flows cover multiple payment methods and include authentication,
+payment authorization, balance validation, transaction processing,
+webhook delivery, and settlement.
+
+### Payment Flow Overview
+<img width="1200" height="814" alt="Payment Flow Diagrams" src="https://github.com/user-attachments/assets/cc0c8ac1-9bb5-404e-9c19-1aa1c01500cf" />
+
+
+
+
+
+
 ## Design Patterns
 
 - **Idempotency** — prevents duplicate orders and payments during retries
