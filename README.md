@@ -55,6 +55,17 @@ Prometheus, Grafana, and Zipkin provide metrics, dashboards, and distributed
 tracing.
 
 <img width="900" alt="Distributed Payment Gateway Architecture" src="https://github.com/user-attachments/assets/4faabe78-a19f-43ee-a52e-9d71df805288" />
+## Services
+
+| Service | Responsibility |
+|---|---|
+| [API Gateway](./api-gateway-service/) | Authentication, rate limiting, and request routing |
+| [Merchant Service](./merchant-service/) | Merchant authorization, API keys, and KYC |
+| [Payment Service](./payment-service/) | Order, payment, refund, state management, SAGA, and payment processing |
+| [Operations Service](./operations-service/) | Webhooks, settlement, and analytics |
+| [Vault Service](./vault-service/) | Secure payment credential tokenization |
+| [Discovery Service](./discovery-service/) | Service discovery |
+| [Config Service](./config-service/) | Centralized service configuration |
 
 ## Payment Flows
 
