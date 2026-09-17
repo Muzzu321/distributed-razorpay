@@ -87,21 +87,20 @@ distributed transaction challenges.
 
 ## Load Testing
 
-Load testing was performed using Apache JMeter against the deployed payment
-APIs.
+Load testing was performed using Apache JMeter against the payment APIs.
 
-### Overall Results
+### Benchmark Results
 
 | Metric | Result |
 |---|---:|
 | Total Requests | 40,201 |
 | Error Rate | 0.00% |
+| Throughput | 308.58 TPS |
 | Average Response Time | 424.72 ms |
 | Median Response Time | 280 ms |
 | P90 Latency | 983 ms |
 | P95 Latency | 1,499.95 ms |
 | P99 Latency | 2,210.99 ms |
-| Throughput | 308.58 TPS |
 
 ### Create Order
 
@@ -109,9 +108,9 @@ APIs.
 |---|---:|
 | Requests | 20,000 |
 | Error Rate | 0.00% |
+| Throughput | 177.30 TPS |
 | Average Response Time | 426.78 ms |
 | P99 Latency | 2,230.99 ms |
-| Throughput | 177.30 TPS |
 
 ### Init Payment
 
@@ -119,10 +118,9 @@ APIs.
 |---|---:|
 | Requests | 20,000 |
 | Error Rate | 0.00% |
+| Throughput | 177.85 TPS |
 | Average Response Time | 426.14 ms |
 | P99 Latency | 2,257.99 ms |
-| Throughput | 177.85 TPS |
-
 > **Note:** These results represent the recorded JMeter benchmark for this
 > test configuration. Throughput and latency depend on the deployment,
 > infrastructure, workload, and test configuration.
