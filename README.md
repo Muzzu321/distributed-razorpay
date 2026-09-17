@@ -130,9 +130,15 @@ Load testing was performed using Apache JMeter against the payment APIs.
 
 ## Observability
 
-- **Prometheus** — service metrics
-- **Grafana** — CPU and JVM memory dashboards
-- **Zipkin** — distributed request tracing
+The system includes metrics, dashboards, and distributed tracing to monitor
+service behavior across the microservice architecture.
+
+- **Prometheus** — collects application and service metrics
+- **Grafana** — visualizes metrics through dashboards
+- **Zipkin** — provides distributed request tracing across services
+
+This helps identify latency, service failures, and request flow across
+distributed components.
 
 <img width="900" height="561" alt="Grafana Dashboard" src="https://github.com/user-attachments/assets/bc9850ff-1e6b-4925-aaa7-8e3f4624a35d" />
 
